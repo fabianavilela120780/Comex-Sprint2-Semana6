@@ -40,8 +40,6 @@ $roupas = [
         'qtd_estoque' => 0
     ],
 ];
-
-
 function encontrar_maior_menor_preco($roupas) {
     // Inicializa a roupa mais cara e mais barata como a primeira roupa do array
     $roupa_mais_cara = current($roupas);
