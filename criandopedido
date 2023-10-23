@@ -26,8 +26,8 @@ classe  Pedido {
         return  $ this -> produtos ;
     }
 
-    public  function  adicionarProduto ( $ produto , $ quantidade ) {
-        $ this -> produtos [] = array ( 'produto' => $ produto , 'quantidade' => $ quantidade );
+    public  function  adicionarProduto ( $ roupas , $ quantidade ) {
+        $ this -> produtos [] = array ( 'calça' => $ roupas , 'quantidade' => $ quantidade );
     }
 }
 
@@ -38,11 +38,11 @@ $ cliente1 = novo  Cliente (" Maria do Carmo ", " mariadocarmo@email.com ", " 98
 $ pedido1 = novo  Pedido ( 1 , $ cliente1 );
 
 // Adicionar produtos ao pedido
-$ produto1 = novo  Produto (" jaqueta ", 10.0 , 5 );
+$ produto1 = novo  Produto (" jaqueta ", 55.40 , 10 );
 $ pedido1 -> adicionarProduto ( $roupas , 2 );
 
-$ produto2 = novo  Produto (" Produto B ", 20.0 , 3 );
-$ pedido1 -> adicionarProduto ( $roupas , 1 );
+$ produto2 = novo  Produto (" calça ", 65.40 , 7 );
+$ pedido1 -> adicionarProduto ( $roupas ,4 );
 
 // Exibir informações do pedido
 echo " ID do pedido: " . $ pedido1 -> getId () . "\n";
