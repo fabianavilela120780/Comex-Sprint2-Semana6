@@ -40,20 +40,25 @@ classe  Produto {
 }
 
 // Cria um objeto Produto
-$ produto1 = novo  Produto (" Produto A ", 10.0 , 50 );
+$roupas = [
+    '1' => [
+        'nome' => 'Jaqueta',
+        'preco' => 55.40,
+        'qtd_estoque' => 120
+    ],;
 
 // Exibir informações iniciais do produto
-echo " Nome do produto: " . $ produto1 -> getNome () . "\n";
-echo " Preço do produto: $ " . $ produto1 -> getPreco () . "\n";
-eco " Quantidade em estoque: " . $ produto1 -> getQuantidadeEstoque () . "\n";
+echo " Nome do produto: " . $roupas -> getNome () . "\n";
+echo " Preço do produto: $ " . $roupas -> getPreco () . "\n";
+eco " Quantidade em estoque: " . $roupas -> getQuantidadeEstoque () . "\n";
 
 //Adicionar 10 unidades do produto
-$ produto1 -> adicionarProduto ( 10 );
+$roupas -> adicionarProduto ( 10 );
 
 // Remove 5 unidades do produto
-$ produto1 -> removedorProduto ( 5 );
+$roupas -> removedorProduto ( 5 );
 
 // Exibir valor total em estoque
-echo " Valor total em estoque: $ " . $ produto1 -> calcularValorTotal () . "\n";
+echo " Valor total em estoque: $ " . $roupas -> calcularValorTotal () . "\n";
 
 ?>
