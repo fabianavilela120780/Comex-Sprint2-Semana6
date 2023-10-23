@@ -1,0 +1,59 @@
+
+classe  Produto {
+    privado  $ nome ;
+    privado  $ preco ;
+    private  $ quantidadeEstoque ;
+
+     função  pública __construct ( $ nome , $ preco , $ quantidadeEstoque ) {
+        $ this -> nome = $ nome ;
+        $ this -> preço = $ preço ;
+        $ this -> quantidadeEstoque = $ quantidadeEstoque ;
+    }
+
+     função  pública getNome () {
+        retorne  $ this -> nome ;
+    }
+
+    public  function  getPreco () {
+        return  $ this -> preço ;
+    }
+
+    public  function  getQuantidadeEstoque (){
+        return  $ this -> quantidadeEstoque ;
+    }
+
+    public  function  adicionarProduto ( $ quantidade ) {
+        $ this -> quantidadeEstoque += $ quantidade ;
+    }
+
+    public  function  removedorProduto ( $ quantidade ){
+        if ( $ quantidade <= $ this quantidade -> Estoque ) {
+            $ this -> quantidadeEstoque -= $ quantidade ;
+        } senão {
+            echo " Quantidade insuficiente em estoque. \n";
+        }
+    }
+
+    public  function  calcularValorTotal (){
+        return  $ this -> preço * $ this -> quantidadeEstoque ;
+    }
+}
+
+// Cria um objeto Produto
+$ produto1 = novo  Produto (" Produto A ", 10.0 , 50 );
+
+// Exibir informações iniciais do produto
+echo " Nome do produto: " . $ produto1 -> getNome () . "\n";
+echo " Preço do produto: $ " . $ produto1 -> getPreco () . "\n";
+eco " Quantidade em estoque: " . $ produto1 -> getQuantidadeEstoque () . "\n";
+
+//Adicionar 10 unidades do produto
+$ produto1 -> adicionarProduto ( 10 );
+
+// Remove 5 unidades do produto
+$ produto1 -> removedorProduto ( 5 );
+
+// Exibir valor total em estoque
+echo " Valor total em estoque: $ " . $ produto1 -> calcularValorTotal () . "\n";
+
+?>
