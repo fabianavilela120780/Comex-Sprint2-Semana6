@@ -1,2 +1,2 @@
-# Sprint2/Comex/semana6
-Comex/semana6
+# Sprint3/Comex/semana7
+Comex/semana7
