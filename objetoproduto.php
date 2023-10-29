@@ -1,4 +1,4 @@
-
+<?php
 classe  Produto {
     privado  $ nome ;
     privado  $ preco ;
